@@ -1,0 +1,47 @@
+/* Basic styling for the skills section */
+.skills {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the skills section title */
+.skills h2 {
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Styling for the skills list */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for each skill item */
+.skills ul li {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for each skill item */
+.skills ul li:hover {
+    background-color: #004d40;
+}
+
+/* Responsive design: adjust padding and font size for smaller screens */
+@media (max-width: 600px) {
+    .skills ul li {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}

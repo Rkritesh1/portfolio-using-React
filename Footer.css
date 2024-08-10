@@ -1,0 +1,27 @@
+/* Basic styling for the footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: -100px;  /* Hide the footer off-screen initially */
+    left: 0;
+    transition: bottom 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Footer becomes visible when it has the "visible" class */
+.footer.visible {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* Styling for the footer text */
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}

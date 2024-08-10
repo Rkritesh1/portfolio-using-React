@@ -1,0 +1,61 @@
+/* Basic styling for the header */
+.header {
+    background-color: #008080;
+
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: -100px;  /* Hide the header off-screen initially */
+    left: 0;
+    transition: top 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 1000;  /* Ensure the header stays on top of other content */
+}
+
+/* Header becomes visible when it has the "visible" class */
+.header.visible {
+    top: 0;
+    opacity: 1;
+}
+
+/* Styling for the header title */
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the navigation bar */
+.header nav {
+    margin-top: 15px;
+}
+
+/* Styling for the navigation links */
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change link color on hover */
+.header nav a:hover {
+    color: #f0a500;
+}
+
+/* Responsive design: adjust font sizes for smaller screens */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}

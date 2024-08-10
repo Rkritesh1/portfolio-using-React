@@ -1,0 +1,29 @@
+.about {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: auto;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
